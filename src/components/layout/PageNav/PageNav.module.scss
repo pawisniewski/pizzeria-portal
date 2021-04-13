@@ -1,0 +1,9 @@
+@import '../../../styles/settings.scss';
+
+.link {
+  padding: $base-size;
+}
+
+.active {
+  color: $color-main;
+}
