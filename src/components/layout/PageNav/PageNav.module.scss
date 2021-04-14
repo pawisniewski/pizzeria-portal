@@ -1,7 +1,12 @@
 @import '../../../styles/settings.scss';
 
-.link {
+.component {
   padding: $base-size;
+  margin-left: auto;
+}
+
+.link {
+  color: inherit;
 }
 
 .active {
