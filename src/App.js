@@ -5,7 +5,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 
 import MainLayout from './components/layout/MainLayout/MainLayout';
-import Dashboard from './components/views/Dashboard/Dashboard';
+import Homepage from './components/views/Homepage/Homepage';
 import Login from './components/views/Login/Login';
 import Tables from './components/views/Tables/Tables';
 import Booking from './components/views/Booking/Booking';
@@ -31,7 +31,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <MainLayout>
             <Switch>
-              <Route exact path={`/`} component={Dashboard} />
+              <Route exact path={`/`} component={Homepage} />
               <Route exact path={`/login`} component={Login} />
               <Route exact path={`/tables`} component={Tables} />
               <Route exact path={`/tables/booking/new`} component={NewBooking} />

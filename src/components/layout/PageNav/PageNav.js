@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 
 const PageNav = () => (
   <nav className={styles.component}>
-    <Button component={NavLink} className={styles.link} exact to={`/`} activeClassName={styles.active}>Dashboard</Button>
+    <Button component={NavLink} className={styles.link} exact to={`/`} activeClassName={styles.active}>Home</Button>
     <Button component={NavLink} className={styles.link} to={`/login`} activeClassName={styles.active}>Login</Button>
     <Button component={NavLink} className={styles.link} to={`/tables`} activeClassName={styles.active}>Tables</Button>
     <Button component={NavLink} className={styles.link} to={`/waiter`} activeClassName={styles.active}>Waiter</Button>
