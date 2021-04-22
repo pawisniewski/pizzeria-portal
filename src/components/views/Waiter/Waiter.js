@@ -46,7 +46,7 @@ class Waiter extends React.Component {
       case 'ordered':
         return (
           <>
-            <Button onClick={() => changeStatus(row.id, 'prepared')} color='primary' size='small'>prepared</Button>
+            <Button disabled>prepared?</Button>
             <Button onClick={() => changeStatus(row.id, 'free')} color='secondary'>cancel</Button>
           </>
         );
@@ -91,7 +91,6 @@ class Waiter extends React.Component {
               <TableRow>
                 <TableCell>Table</TableCell>
                 <TableCell>Status</TableCell>
-                <TableCell>Order</TableCell>
                 <TableCell>Action</TableCell>
               </TableRow>
             </TableHead>
@@ -103,11 +102,6 @@ class Waiter extends React.Component {
                   </TableCell>
                   <TableCell>
                     {row.status}
-                  </TableCell>
-                  <TableCell>
-                    <Button component={Link} to={`/waiter/order/${row.order}`}>
-                      {row.order}
-                    </Button>
                   </TableCell>
                   <TableCell>
                     {this.renderActions(row)}

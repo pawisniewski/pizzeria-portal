@@ -17,7 +17,7 @@ import NewEvent from './components/views/NewEvent/NewEvent';
 import Waiter from './components/views/Waiter/WaiterContainer';
 import Orders from './components/views/Orders/Orders';
 import NewOrder from './components/views/NewOrder/NewOrder';
-import Kitchen from './components/views/Kitchen/Kitchen';
+import Kitchen from './components/views/Kitchen/KitchenContainer';
 
 const theme = createMuiTheme({
   palette: {
